@@ -4,7 +4,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ductnn/mongodb-cluster-docker/pulls)
 
 A simple implement MongoDB Cluster on Docker with **PSS Style** (Primary -
-Secondary - Secondary).
+Secondary - Secondary). Inspired by this [article](https://viblo.asia/p/cai-dat-mongo-cluster-voi-docker-m68Z0NN25kG)
 
 ## Components
 - **2 Mongos** (router): The mongos acts as query routers, providing an interface
@@ -461,7 +461,43 @@ mongos> sh.status()
                         too many chunks to print, use verbose if you want to force print
 ```
 
-Uhmm!!! Done =))))
+Done ... *wait*. You can **remove** all:
+
+```bash
+➜  mongodb-cluster-docker git:(master) bash clean_all.sh 
+Stopping mongo-config-03 ... done
+Stopping mongo-config-02 ... done
+Stopping mongo-config-01 ... done
+Stopping router-02       ... done
+Stopping shard-02-node-a ... done
+Stopping shard-01-node-a ... done
+Stopping shard-03-node-a ... done
+Stopping shard-01-node-c ... done
+Stopping shard-03-node-c ... done
+Stopping shard-02-node-b ... done
+Stopping router-01       ... done
+Stopping shard-01-node-b ... done
+Stopping shard-03-node-b ... done
+Stopping shard-02-node-c ... done
+Removing mongo-config-03 ... done
+Removing mongo-config-02 ... done
+Removing mongo-config-01 ... done
+Removing router-02       ... done
+Removing shard-02-node-a ... done
+Removing shard-01-node-a ... done
+Removing shard-03-node-a ... done
+Removing shard-01-node-c ... done
+Removing shard-03-node-c ... done
+Removing shard-02-node-b ... done
+Removing router-01       ... done
+Removing shard-01-node-b ... done
+Removing shard-03-node-b ... done
+Removing shard-02-node-c ... done
+Removing network mongodb-cluster-docker_default
+Removing image mongo:5.0.3
+```
+
+And so real *done* =))))
 
 ### Show your support
 Give a ⭐ if you like this application ❤️
