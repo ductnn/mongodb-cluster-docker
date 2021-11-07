@@ -1,0 +1,11 @@
+/scripts
+
+.dockerignore
+
+.docker
+
+docker-compose.yaml
+
+.gitignore
+
+README.md

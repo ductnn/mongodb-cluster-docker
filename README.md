@@ -65,7 +65,7 @@ Creating mongo-config-02 ... done
 Creating mongo-config-03 ... done
 ```
 
-Result:
+**Result**:
 
 ```bash
 ➜  mongodb-cluster-docker git:(master) ✗ docker ps
@@ -87,6 +87,8 @@ ad9c4985f630   mongo:5.0.3   "docker-entrypoint.s…"   16 minutes ago   Up 16 m
 ```
 
 Then, we need to init `config-servers`, `shards` and `router`:
+
+### Config servers
 
 ```bash
 # Initilizing the config server
@@ -113,6 +115,8 @@ https://docs.mongodb.com/mongodb-shell/install/
 }
 bye
 ```
+
+### Shards
 
 ```bash
 # Initilzing the shards
@@ -181,6 +185,7 @@ https://docs.mongodb.com/mongodb-shell/install/
 bye
 ```
 
+### Routers
 After initilizing `config-server` and `shards`, wait a bit to to elect primaries
 before initilizing `router`:
 
@@ -237,6 +242,7 @@ https://docs.mongodb.com/mongodb-shell/install/
 bye
 ```
 
+### Verify status
 We can check the status of replicaset:
 
 ```bash
