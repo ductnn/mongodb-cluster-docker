@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set up
-bash init-configserver.sh
+bash ./bash/init-configserver.sh
 
-bash init-replicaset.sh
+bash ./bash/init-replicaset.sh
 
-bash init-router.sh
+bash ./bash/init-router.sh
