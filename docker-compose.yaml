@@ -167,5 +167,3 @@ services:
       - ./scripts:/scripts
     ports:
       - 27130:27017
-
-  
