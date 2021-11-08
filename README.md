@@ -2,6 +2,7 @@
 
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ductnn/mongodb-cluster-docker/pulls)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A simple implement MongoDB Cluster on Docker with **PSS Style** (Primary -
 Secondary - Secondary). Inspired by this [article](https://viblo.asia/p/cai-dat-mongo-cluster-voi-docker-m68Z0NN25kG)
